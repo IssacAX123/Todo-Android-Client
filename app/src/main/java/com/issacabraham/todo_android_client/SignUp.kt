@@ -18,7 +18,7 @@ class SignUp : AppCompatActivity() {
         var fieldList = listOf<EditText>(edtFirstName, edtLastName, edtEmail, edtPassword)
         btnSignUp.setOnClickListener{
             for (field in fieldList){
-                if (!field.text.getString().isEmpty()){
+                if (!field.text.toString().isEmpty()){
 
                 }else{
                     Toas
