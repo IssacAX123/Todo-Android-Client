@@ -9,6 +9,7 @@
 
     <EditText
         android:id="@+id/edtEmail"
+        android:tag="@string/email"
         android:layout_width="276dp"
         android:layout_height="26dp"
         android:layout_marginTop="164dp"
@@ -22,6 +23,7 @@
 
     <EditText
         android:id="@+id/edtPassword"
+        android:tag="@string/password"
         android:layout_width="276dp"
         android:layout_height="26dp"
         android:layout_marginTop="20dp"
