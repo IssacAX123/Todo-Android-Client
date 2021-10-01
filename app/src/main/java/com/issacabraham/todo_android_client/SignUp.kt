@@ -1,5 +1,6 @@
 package com.issacabraham.todo_android_client
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -38,6 +39,8 @@ class SignUp : AppCompatActivity() {
             if (!errors){
                 print(sendJSON.toString())
                 Request.postUser(sendJSON)
+                val intent = Intent(this, LogIn::class.java)
+                startActivity(intent)
             }
         }
     }
